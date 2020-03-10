@@ -142,7 +142,20 @@ X, Rep, SessionIndex, DD variables-highly correlated with other variables and hi
 
 # Models
 
-1. Data Partition
+## Data Partition
 
 Using 'createDataPartition' method that creates balanced splits of the data. The random sampling occurs within each class and it preserves the overall class distribution of the data.
 
+![data partition](https://github.com/supriya-s-jadhav/Anomaly-Detection-Models-Using-Keystroke-dynamics-behavioural-biometrics-/blob/master/Images/data%20partition.png)
+
+## Building Models
+
+1. Multinomial Logistic Model
+
+| Model Name | Method | Accuracy |
+|------------|--------|----------|
+|Multinomial Logistic Method| Train | 84.89%|
+| | Test | 77.68% |
+
+Test data: 95% Confidence Interval
+    (74.39, 80.74)
