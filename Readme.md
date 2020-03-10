@@ -237,13 +237,8 @@ SVM radial Test data: 95%Confidence Interval
 
 # Model Comparisions
 
-Test Accuracy
+![model comparision](https://github.com/supriya-s-jadhav/Anomaly-Detection-Models-Using-Keystroke-dynamics-behavioural-biometrics-/blob/master/Images/model%20comparision.png)
 
-| Method | CreateDataPartition | Partition Bases on SessionIndex |
-|--------|---------------------|---------------------------------|
-| GLM using H variable | 77.61 % | 67.18% |
-| LDA using H | 81.59% | 71.65% |
-| Random Forest | 95.87% | 91.90% |
 
 ## Recommended models based on my analysis on passcode dataset
 
@@ -267,4 +262,34 @@ Results
 ![Result1](https://github.com/supriya-s-jadhav/Anomaly-Detection-Models-Using-Keystroke-dynamics-behavioural-biometrics-/blob/master/Images/result%201.png)
 
 ![Result2](https://github.com/supriya-s-jadhav/Anomaly-Detection-Models-Using-Keystroke-dynamics-behavioural-biometrics-/blob/master/Images/result%202.png)
+
+# References Used :
+
+## Textbooks
+
+1. Introduction to statistical Learning in R
+2. A Handbook of Statisticsl Analysis using R
+3. R graphics Cookbook
+4. South Dakota State University Stat 702 online course material
+
+## Links
+
+http://www.biometric-solutions.com/keystroke-dynamics.html
+
+https://stats.idre.ucla.edu/r/dae/multinomial-logistic-regression/
+
+https://en.wikipedia.org/wiki/Keystroke_dynamics
+
+http://www.cs.cmu.edu/~keystroke/
+
+https://www.computereconomics.com/article.cfm?id=1181
+
+http://www.sthda.com/english/articles/32-r-graphics-essentials/133-plot-one-variable-frequency-graph-density-distribution-and-more/
+
+https://www.analyticsvidhya.com/blog/2016/03/practical-guide-principal-component-analysis-python/
+
+http://www.sthda.com/english/articles/32-r-graphics-essentials/133-plot-one-variable-frequency-graph-density-distribution-and-more/
+
+
+
 
