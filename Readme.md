@@ -59,5 +59,27 @@ Down-Down Time (DD time = Hold time + Up-Down time )
 1.Subjects
 Brief look up at number of reps in each class.
 
-![Frequency distribution]()
+![Frequency distribution](https://github.com/supriya-s-jadhav/Anomaly-Detection-Models-Using-Keystroke-dynamics-behavioural-biometrics-/blob/master/Images/unnamed-chunk-2-1.png)
+
+2.Subjects' frequency by session Index
+All users participate in session 8 but fewer users do not participate in session 7.
+
+![Frequency distribution by session index 7](https://github.com/supriya-s-jadhav/Anomaly-Detection-Models-Using-Keystroke-dynamics-behavioural-biometrics-/blob/master/Images/unnamed-chunk-3-1.png)
+
+## Hypothesis testing
+
+Does sessionIndex makes any difference in measurements of passcode for users?
+
+We performed independence test:
+
+<b>Null hypothesis:</b> The true mean of a user in session 7 and session 8 are same.
+
+<b>Alternative hypothesis:</b> The true mean of a user in session 7 and session 8 are different.
+
+We found out that most of the p-values are greater than 0.05. Below are the results:
+
+<b>Conclusion:</b> Fail to reject the null hypothesis at 0.05 significance level.. Hence we conclude that session index does not make any difference in individual user's passcode typing measurements.
+
+
+
 
