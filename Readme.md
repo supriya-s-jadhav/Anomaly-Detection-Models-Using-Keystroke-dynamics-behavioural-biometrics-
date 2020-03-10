@@ -1,20 +1,20 @@
 # Anomaly Detection Models Using Keystroke Dynamics (Behavioral Biometrics)
 
-|Outline|
+|Project Outline|
 |-------|
-| Brief Introduction: Anomaly Detection Models Using Keystroke Dynamics |
-| Problem Statement |
-| Dataset Introduction |
-| Data Exploration |
-|Model Building : |
-| Multinomial logistic Regression|
-| LDA |
-| PCA+LDA|
-|Random forest, Bagging and Boosting |
-| Support Vector MAchine |
-| Model Performance Comparision |
-| Recommended Model |
-| Conclusion |
+| 1.Brief Introduction: Anomaly Detection Models Using Keystroke Dynamics |
+| 2.Problem Statement |
+| 3.Dataset Introduction |
+| 4.Data Exploration |
+| 5.Model Building : |
+| 6.Multinomial logistic Regression|
+| 7.LDA |
+| 8.PCA+LDA|
+| 9.Random forest, Bagging and Boosting |
+| 10.Support Vector MAchine |
+| 11.Model Performance Comparision |
+| 12.Recommended Model |
+| 13.Conclusion |
 
 # Introduction
 
