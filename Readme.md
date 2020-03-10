@@ -106,17 +106,12 @@ Hold time and Up-Down time
 
 ![7.2](https://github.com/supriya-s-jadhav/Anomaly-Detection-Models-Using-Keystroke-dynamics-behavioural-biometrics-/blob/master/Images/unnamed-chunk-7-2.png)
 
-![7.3](https://github.com/supriya-s-jadhav/Anomaly-Detection-Models-Using-Keystroke-dynamics-behavioural-biometrics-/blob/master/Images/unnamed-chunk-7-3.png)
 
 ## Box-plots
 
 ![12.1](https://github.com/supriya-s-jadhav/Anomaly-Detection-Models-Using-Keystroke-dynamics-behavioural-biometrics-/blob/master/Images/unnamed-chunk-12-1.png)
 
 ![12.2](https://github.com/supriya-s-jadhav/Anomaly-Detection-Models-Using-Keystroke-dynamics-behavioural-biometrics-/blob/master/Images/unnamed-chunk-12-2.png)
-
-![12.3](https://github.com/supriya-s-jadhav/Anomaly-Detection-Models-Using-Keystroke-dynamics-behavioural-biometrics-/blob/master/Images/unnamed-chunk-12-3.png)
-
-![12.4](https://github.com/supriya-s-jadhav/Anomaly-Detection-Models-Using-Keystroke-dynamics-behavioural-biometrics-/blob/master/Images/unnamed-chunk-12-4.png)
 
 ## Correlation Matrix
 
@@ -129,10 +124,6 @@ Looking at Correlation Matrix of variables: UD and DD variables are highly corre
 ![4.1](https://github.com/supriya-s-jadhav/Anomaly-Detection-Models-Using-Keystroke-dynamics-behavioural-biometrics-/blob/master/Images/unnamed-chunk-4-1.png)
 
 ![4.2](https://github.com/supriya-s-jadhav/Anomaly-Detection-Models-Using-Keystroke-dynamics-behavioural-biometrics-/blob/master/Images/unnamed-chunk-4-2.png)
-
-![4.3](https://github.com/supriya-s-jadhav/Anomaly-Detection-Models-Using-Keystroke-dynamics-behavioural-biometrics-/blob/master/Images/unnamed-chunk-5-1.png)
-
-![4.4](https://github.com/supriya-s-jadhav/Anomaly-Detection-Models-Using-Keystroke-dynamics-behavioural-biometrics-/blob/master/Images/unnamed-chunk-5-2.png)
 
 ## Variable Selection
 
@@ -192,5 +183,5 @@ Reasons
 
 Let us look the results of random forest on passcode data set know file.
 
-
+![random forest](https://github.com/supriya-s-jadhav/Anomaly-Detection-Models-Using-Keystroke-dynamics-behavioural-biometrics-/blob/master/Images/random%20forest.png)
 
