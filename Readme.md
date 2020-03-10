@@ -150,12 +150,47 @@ Using 'createDataPartition' method that creates balanced splits of the data. The
 
 ## Building Models
 
-1. Multinomial Logistic Model
+1. GLM Logistic Model
 
 | Model Name | Method | Accuracy |
 |------------|--------|----------|
-|Multinomial Logistic Method| Train | 84.89%|
+| Multinomial Logistic Method| Train | 84.89%|
 | | Test | 77.68% |
 
 Test data: 95% Confidence Interval
     (74.39, 80.74)
+
+2. LDS using only H-variables
+
+| Model Name | Method | Accuracy |
+|------------|--------|----------|
+| LDA having only H predictors | Train | 81.86%|
+| | Test | 81.59% |
+
+# Model Comparisions
+
+Test Accuracy
+
+| Method | CreateDataPartition | Partition Bases on SessionIndex |
+|--------|---------------------|---------------------------------|
+| GLM using H variable | 77.61 % | 67.18% |
+| LDA using H | 81.59% | 71.65% |
+| Random Forest | 95.87% | 91.90% |
+
+## Recommended models based on my analysis on passcode dataset
+
+Random Forest
+
+Reasons
+
+1. Random Forest is intrinsically suited for multiclass problems
+2. Over all model accuracy is good.
+3. Class specific accuracy is good.
+4. Class specific accuracy for classes with fewer reps is good.
+5. We can use data as they are.
+6. It reduces overfitting and is therefore more accurate.
+
+Let us look the results of random forest on passcode data set know file.
+
+
+
