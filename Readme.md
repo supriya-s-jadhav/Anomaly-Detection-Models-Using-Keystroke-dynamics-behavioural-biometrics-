@@ -80,6 +80,69 @@ We found out that most of the p-values are greater than 0.05. Below are the resu
 
 <b>Conclusion:</b> Fail to reject the null hypothesis at 0.05 significance level.. Hence we conclude that session index does not make any difference in individual user's passcode typing measurements.
 
+Results:
+![Hypothesis results](https://github.com/supriya-s-jadhav/Anomaly-Detection-Models-Using-Keystroke-dynamics-behavioural-biometrics-/blob/master/Images/hypothesis%20testing.png)
 
+## Distribution Graph
 
+Let us look at the distribution of hold time for 3 users:
+s003, s004, s005.
+
+![Comparing 1](https://github.com/supriya-s-jadhav/Anomaly-Detection-Models-Using-Keystroke-dynamics-behavioural-biometrics-/blob/master/Images/unnamed-chunk-8-1.png)
+
+![Comparing 2](https://github.com/supriya-s-jadhav/Anomaly-Detection-Models-Using-Keystroke-dynamics-behavioural-biometrics-/blob/master/Images/unnamed-chunk-8-2.png)
+
+Let us look at the distribution of all user's hold time for typing passcode.
+
+![Comparing all 1](https://github.com/supriya-s-jadhav/Anomaly-Detection-Models-Using-Keystroke-dynamics-behavioural-biometrics-/blob/master/Images/unnamed-chunk-9-1.png)
+
+![Comparing all 2](https://github.com/supriya-s-jadhav/Anomaly-Detection-Models-Using-Keystroke-dynamics-behavioural-biometrics-/blob/master/Images/unnamed-chunk-9-2.png)
+
+## Scatter plot:
+
+Hold time and Up-Down time
+
+![7.1](https://github.com/supriya-s-jadhav/Anomaly-Detection-Models-Using-Keystroke-dynamics-behavioural-biometrics-/blob/master/Images/unnamed-chunk-7-1.png)
+
+![7.2](https://github.com/supriya-s-jadhav/Anomaly-Detection-Models-Using-Keystroke-dynamics-behavioural-biometrics-/blob/master/Images/unnamed-chunk-7-2.png)
+
+![7.3](https://github.com/supriya-s-jadhav/Anomaly-Detection-Models-Using-Keystroke-dynamics-behavioural-biometrics-/blob/master/Images/unnamed-chunk-7-3.png)
+
+## Box-plots
+
+![12.1](https://github.com/supriya-s-jadhav/Anomaly-Detection-Models-Using-Keystroke-dynamics-behavioural-biometrics-/blob/master/Images/unnamed-chunk-12-1.png)
+
+![12.2](https://github.com/supriya-s-jadhav/Anomaly-Detection-Models-Using-Keystroke-dynamics-behavioural-biometrics-/blob/master/Images/unnamed-chunk-12-2.png)
+
+![12.3](https://github.com/supriya-s-jadhav/Anomaly-Detection-Models-Using-Keystroke-dynamics-behavioural-biometrics-/blob/master/Images/unnamed-chunk-12-3.png)
+
+![12.4](https://github.com/supriya-s-jadhav/Anomaly-Detection-Models-Using-Keystroke-dynamics-behavioural-biometrics-/blob/master/Images/unnamed-chunk-12-4.png)
+
+## Correlation Matrix
+
+Looking at Correlation Matrix of variables: UD and DD variables are highly correlated.
+
+![Correlation matrix](https://github.com/supriya-s-jadhav/Anomaly-Detection-Models-Using-Keystroke-dynamics-behavioural-biometrics-/blob/master/Images/unnamed-chunk-11-1.png)
+
+## Histogram
+
+![4.1](https://github.com/supriya-s-jadhav/Anomaly-Detection-Models-Using-Keystroke-dynamics-behavioural-biometrics-/blob/master/Images/unnamed-chunk-4-1.png)
+
+![4.2](https://github.com/supriya-s-jadhav/Anomaly-Detection-Models-Using-Keystroke-dynamics-behavioural-biometrics-/blob/master/Images/unnamed-chunk-4-2.png)
+
+![4.3](https://github.com/supriya-s-jadhav/Anomaly-Detection-Models-Using-Keystroke-dynamics-behavioural-biometrics-/blob/master/Images/unnamed-chunk-5-1.png)
+
+![4.4](https://github.com/supriya-s-jadhav/Anomaly-Detection-Models-Using-Keystroke-dynamics-behavioural-biometrics-/blob/master/Images/unnamed-chunk-5-2.png)
+
+## Variable Selection
+
+Variables Removed:
+
+X, Rep, SessionIndex, DD variables-highly correlated with other variables and highly skewed
+
+# Models
+
+1. Data Partition
+
+Using 'createDataPartition' method that creates balanced splits of the data. The random sampling occurs within each class and it preserves the overall class distribution of the data.
 
