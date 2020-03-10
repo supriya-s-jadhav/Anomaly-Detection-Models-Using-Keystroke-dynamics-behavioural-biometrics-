@@ -40,6 +40,7 @@ Down-Down Time (DD time = Hold time + Up-Down time )
 ## Uderstanding Keystroke dynamics used for biometrics
 
 ![keystroke dynamics](https://github.com/supriya-s-jadhav/Anomaly-Detection-Models-Using-Keystroke-dynamics-behavioural-biometrics-/blob/master/Images/keystrokedynamics.png)
+
 # Applications:
 
 1. Biometric Identification for user authentication.
@@ -52,3 +53,11 @@ Down-Down Time (DD time = Hold time + Up-Down time )
 1. Improved security benefits.
 2. More cost effective.
 3. Continuous authentication strategies.
+
+# Dataset Exploration
+
+1.Subjects
+Brief look up at number of reps in each class.
+
+![Frequency distribution]()
+
