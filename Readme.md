@@ -1,5 +1,23 @@
 # Anomaly Detection Models Using Keystroke Dynamics (Behavioral Biometrics)
 
+|Outline|
+|-------|
+| Brief Introduction: Anomaly Detection Models Using Keystroke Dynamics |
+| Problem Statement |
+| Dataset Introduction |
+| Data Exploration |
+|Model Building : |
+| Multinomial logistic Regression|
+| LDA |
+| PCA+LDA|
+|Random forest, Bagging and Boosting |
+| Support Vector MAchine |
+| Model Performance Comparision |
+| Recommended Model |
+| Conclusion |
+
+# Introduction
+
 How does a system identify users based on their typing rhythms? Keystroke dynamics is the analysis of typing rhythms to discriminate among users and it has been proposed for detecting impostors (i.e. both insiders and external attackers). Typing biometrics is part of a larger class of biometrics known as "behavioral biometrics" which uses different individual's typing pattern to authenticate individual person's identity.
 
 The case study includes using a dataset which consists of typing speed information of a passcode by group of 51 different users recorded at different time intervals, building a classifier that recognizes typing pattern of different users, test the classifier on 5 different datasets having typing speed information of 5 different users and identify the right user.
@@ -19,7 +37,7 @@ Task 1 : Design a model.
 Task 2 : Predict the individual user.
 Task 3 : Provide method's accuracy and reasons of selecting particular methods.
 
-# Dataset brief introduction
+# Dataset introduction
 
 Dataset consists of 1777 observations over 35 columns, which represents typing speed of 51 different individuals who have access to a passcode. Only one user can use system at a time.
 
@@ -141,12 +159,13 @@ Using 'createDataPartition' method that creates balanced splits of the data. The
 
 ## Building Models
 
-1. GLM Logistic Model
+1. Multinomial Logistic Model
 
 | Model Name | Method | Accuracy |
 |------------|--------|----------|
 | Multinomial Logistic Method| Train | 84.89%|
 | | Test | 77.68% |
+| | 5-fold | 78.21% |
 
 Test data: 95% Confidence Interval
     (74.39, 80.74)
@@ -157,6 +176,64 @@ Test data: 95% Confidence Interval
 |------------|--------|----------|
 | LDA having only H predictors | Train | 81.86%|
 | | Test | 81.59% |
+| | 5-fold | 81.03% |
+| | LOOCV | 81.13% |
+
+Test data: 95%Confidence Interval
+    (78.5, 84.42)
+
+3. LDA using H and UD variables
+
+| Model Name | MEthod | Accuracy |
+|------------|--------|----------|
+| LDA using H and UD predictors | Train | 90.14%|
+| | Test | 87.97%|
+| | 5-fold | 88.06%|
+| | LOOCV | 87.38%|
+
+Test data: 95%Confidence Interval
+    (85.31, 90.3)
+
+4. PCA + LDA
+
+I selected 21 Principal components
+
+| Model Name | Method | Accuracy |
+|------------|--------|----------|
+| PCA+LDA | Train | 90.63% |
+| | Test | 85.73% |
+
+Test data: 95%Confidence Interval
+    (85.31, 90.3)
+
+5. Random Forest, Bagging, Boosting
+
+| Model Name | Method | Accuracy |
+|------------|--------|----------|
+| Bagging | Train | 100% |
+| | Test | 92.17% |
+| Random Forest | Train | 100 % |
+| | Test | 95.79%|
+| Boosting | Train | 91.06%|
+| | Test | 82.31% |
+
+Random Forest Test data: 95%Confidence Interval
+    (92.83, 97.51)
+
+6. SVM using linear, poly, radial kernel
+
+| Model Name | Method | Accuracy |
+|------------|--------|----------|
+| SVM linear | Train | 97.42%|
+| | Test | 85.29%|
+| SVM Poly | Train | 97.42%|
+| | Test | 85.58%|
+|SVM Radial | Train | 99.30%|
+| | Test | 88.82%|
+
+SVM radial Test data: 95%Confidence Interval
+    (84.98, 91.97)
+
 
 # Model Comparisions
 
@@ -184,4 +261,10 @@ Reasons
 Let us look the results of random forest on passcode data set know file.
 
 ![random forest](https://github.com/supriya-s-jadhav/Anomaly-Detection-Models-Using-Keystroke-dynamics-behavioural-biometrics-/blob/master/Images/random%20forest.png)
+
+Results
+
+![Result1](https://github.com/supriya-s-jadhav/Anomaly-Detection-Models-Using-Keystroke-dynamics-behavioural-biometrics-/blob/master/Images/result%201.png)
+
+![Result2](https://github.com/supriya-s-jadhav/Anomaly-Detection-Models-Using-Keystroke-dynamics-behavioural-biometrics-/blob/master/Images/result%202.png)
 
